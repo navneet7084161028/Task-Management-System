@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    
+    <script src="todo.js"></script>
+    <title>Task Management System</title>
+
+    <style>
+        body{
+            padding: 0;
+            margin: 0;
+            text-align: center;
+            background-color:palevioletred;
+        }
+        header{
+            background-color: cornflowerblue;
+            padding: 15px;
+        }
+        .contain{
+            background-color: rgb(62, 126, 126);
+            height: 80vh;
+            padding: 45px;
+            border: 1px solid red;
+            text-align: left;
+            margin: auto;
+            width: 80%;
+        }
+        label{
+            font-size: 25px;
+            color: whitesmoke;
+        }
+        input[type = text]{
+            font-size:15px;
+        }
+        input[type = button]{
+            font-size: 15px;
+            width: 90px;
+            color: black;
+        }
+        li{
+            color: black;
+        }
+        h2{
+            margin-top: 5%;
+        }
+        
+    </style>
+</head>
+<body>
+       <header>
+           <h1>Task Management System</h1>
+       </header>
+       <div class="container contain">
+                <form>
+               <label>Add Your Task:-</label>
+
+                <input type="text" name="" id="display" placeholder="Enter Your Task" required/>
+                <input type="button" value="Add" id="add">
+
+                <h2 style="color: white;">ToDo</h2>
+                <div>
+                    <ul id="ul">
+                        </ul>
+                </div>
+
+                <h2 style="color: white;">Completed Tasks</h2> 
+                <div>
+                    <ol id="ol"></ol>
+                </div>
+           </form>
+
+
+</body>
+</html>
