@@ -1,13 +1,18 @@
 $(document).ready(function(){
     $("#add").click(function(){
         var sum = $("#display").val();
-        
+        if(sum.length !== 0)
+        {
         $("ul").append("<li><input type='checkbox' id='mycheck'><label id='task-label'>"+sum+"</label>"+
             '<input type="text" id="edit-txt"/>'+
             '<input type="button" value="Edit" id="edit" />'+
             '<input type="button" value="Update" id="update" />'+
             '<input type="button" value="Delete" id="del"/>'+"</li>").css("color","white");
              $("#display").val('');
+        }
+        else{
+            alert("This field is Required);
+        }
     }) 
 
        $("#ul").on('click', "#del", function(){
