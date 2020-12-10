@@ -11,7 +11,7 @@ $(document).ready(function(){
              $("#display").val('');
         }
         else{
-            alert("This field is Required);
+            alert("This field is Required");
         }
     }) 
 
